@@ -60,6 +60,7 @@ submitGuess = (player) => {
   player.guess = Date.now();
   var guessText = (player.guess - startTime) / 1000;
   document.querySelector(`.player-${player.id}-guess`).innerText = `${guessText}s`;
+  document.querySelector(`.player-${player.id}`).style.transition = "height 0.5s";
   document.querySelector(`.player-${player.id}`).style.height = `${(guessText * 50) + 50}px`
 }
 

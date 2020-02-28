@@ -60,7 +60,7 @@ body {
 .player {
   height: 50px;
   width: 200px;
-  transition: height 2s linear;
+  transition: height 1s;
 }
 
 .player-1-guess,
@@ -141,17 +141,20 @@ button:hover {
   background: #f8f9f9;
   top: 100px;
   left: 17%;
-  z-index: 2;
+  z-index: -1;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   border-radius: 10px;
   color: #4a4a4a;
-  display: none;
+  display: flex;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 .victory.shown {
-  display: flex;
+  opacity: 1;
+  z-index: 2;
 }
 
 .time {
@@ -160,17 +163,18 @@ button:hover {
 }
 
 .background {
-  z-index: 1;
   position: absolute;
   width: 100vw;
   height: 100vh;
   background: black;
-  opacity: .35;
-  display: none;
+  opacity: 0;
+  z-index: -1;
 }
 
 .background.shown {
-  display: block;
+  opacity: .35;
+  transition: opacity 1s;
+  z-index: 1;
 }
 
 .play-again {

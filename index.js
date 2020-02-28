@@ -41,7 +41,7 @@ randomNumber = (min, max) => {
 
 setTimeDisplay = () => {
   number = `${randomNumber(0, 5)}.${randomNumber(0, 10)}`;
-  document.querySelector('.goal').style.bottom = `${(number * 50) + 52}px`;
+  document.querySelector('.goal').style.bottom = `${(number * 50) + 50}px`;
   document.querySelector('.goal').style.display = 'block';
   document.querySelector('.time').style.display = 'block';
   document.querySelector('.time-container').innerText = `${number}s`;

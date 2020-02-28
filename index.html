@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="top-container">
+        <h1 class="emergency-message">
+          <span class="emergency">Emergency: </span> Whoops, looks like some jackwagon wasn't paying attention to their lab's insights.
+          Meltdown will occur unless you can hit the diffuse button at the designated time. Oh and for some reason it's a zero sum game,
+          so only one lab can be saved. Bummer.
+        </h1>
+        <button class="start-button displayed">Best get to diffusin'!</button>
+        <h2 class="time">Time: <span class="time-container"></span></h2>
+        <h2 class="start-timer">Game starts in: <div class="start-time">3</div></h2>
+        <div class="victory">
+          <h1><span class="winner"></span> saved their lab from pure destruction!</h1>
+          <h2>As for the rest of you, you should be ashamed of yourselves.</h2>
+          <img src="https://sciencenotes.org/wp-content/uploads/2015/07/283112780_b427ed9903_o.jpg" width="200">
+          <button class="play-again">Play Again</button>
+        </div>
+      </div>
+      <div>
+        <hr class="goal">
+        <div class="player-container">
+          <div class="player player-1">
+            <div class="name">Player 1</div>
+            <div class="guess player-1-guess"></div>
+          </div>
+          <div class="player player-2">
+            <div class="name">Player 2</div>
+            <div class="guess player-2-guess"></div>
+          </div>
+          <div class="player player-3">
+            <div class="name">Player 3</div>
+            <div class="guess player-3-guess"></div>
+          </div>
+          <div class="player player-4">
+            <div class="name">Player 4</div>
+            <div class="guess player-4-guess"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="victory">
+      <h1><span class="winner"></span> saved their lab from pure destruction!</h1>
+      <h2>As for the rest of you, you should be ashamed of yourselves.</h2>
+      <img src="https://sciencenotes.org/wp-content/uploads/2015/07/283112780_b427ed9903_o.jpg" width="500">
+      <button class="play-again">Play Again</button>
+    </div> -->
+    <div class="background"></div>
+    <script src="index.js" async defer></script>
+  </body>
+</html>
